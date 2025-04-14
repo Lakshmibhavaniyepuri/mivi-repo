@@ -1,292 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIVI Blog</title>
-    <style>
-        /* Basic styling for the body */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: black; 
-            background-color: #9bddff;/* Set all text to black */
-            background-image: url(''); /* Replace with your image path */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mivi Bio</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        /* Navigation Bar Styling */
-        nav {
-            background-color:#b9f2ff;
-            overflow: hidden;
-        }
+    h2 {
+      color: gold;
+    }
 
-        nav a {
-            float: left;
-            display: block;
-            padding: 14px 20px;
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-            transition: background-color 0.3s;
-        }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 220px;
+      background-color: black;
+      padding: 30px;
+    }
 
-        nav a:hover {
-            background-color: #b9f2ff;
-        }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-        /* Section Titles Styling */
-        h2 {
-            padding: 20px;
-            text-align: center;
-        }
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
 
-        /* Add some space for the content sections */
-        section {
-            padding: 50px 20px;
-        }
-    </style>
+    .sidebar ul li a {
+      text-decoration: none;
+      color: gold;
+    }
+
+    .sidebar ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      margin-left: 260px;
+      padding: 30px;
+    }
+
+    .section {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 30px;
+    }
+
+    .section.right {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .about-text {
+      flex: 1;
+      font-size: 16px;
+    }
+
+    blockquote {
+      margin: 10px 0;
+      font-style: italic;
+    }
+
+    blockquote strong {
+      font-style: normal;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#educational_life">Educational Life</a>
-        <a href="#marriage">Marriage</a>
-    </nav>
 
-    <section id="about">
+  <div class="sidebar">
+    <h2>Contents</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#career-mivi">Career</a></li>
+      <li><a href="#education-mivi">Educational Life</a></li>
+      <li><a href="#family-mivi">Family</a></li>
+      <li><a href="#marriage-mivi">Marriage Life</a></li>
+      <li><a href="#achievements-mivi">Achievements</a></li>
+      <li><a href="#quotes-mivi">Famous Quotes</a></li>
+      <li><a href="#gallery-mivi">Gallery</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div id="about" class="section left">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.YzkRXsqvCn4cl-BHye0jdwAAAA&pid=Api&P=0&h=180" alt="mivi family">
+      <div class="About">
         <h2>About</h2>
-        <p>
-            Mivi: Revolutionizing Sound with Innovation
-Mivi is a prominent Indian brand that has garnered a reputation for offering innovative, high-quality audio products designed to cater to the needs of the modern, tech-savvy consumer. Since its inception, Mivi has been driven by a clear vision: to deliver superior sound experiences at an affordable price point, with a focus on creating audio solutions that blend seamlessly with the lifestyle of today’s digital consumer.
-        </p>
-           
-        <p>
+        <p><strong>Mivi</strong> is a homegrown Indian electronics brand that specializes in designing and manufacturing high-quality audio and mobile accessories. Founded in 2015 by Viswanadh Kandula and Midhula Devabhaktuni, Mivi has quickly become a popular name for affordable and stylish tech products, including Bluetooth earphones, wireless speakers, chargers, and cables.</p>
+      </div>
+    </div>
 
-            The Birth of Mivi
-        </p>
-        <p>
-            Founded in 2015, Mivi started with a mission to bridge the gap between premium audio quality and affordable prices. The company quickly realized that the audio market in India was highly fragmented, with few options available that offered both high-quality sound and a budget-friendly price. The founders of Mivi, driven by their passion for technology and music, decided to create products that could deliver an unparalleled listening experience while remaining accessible to the masses.
+    <div id="career-mivi" class="section right">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.hcVJ30C7MyayrJzIfIOMdwHaEc&pid=Api&rs=1&c=1&qlt=95&w=203&h=121" alt="Mivi Career Image">
+      <div class="about-text">
+        <h2>Career</h2>
+        <p><strong>Careers at Mivi</strong> are built around innovation, creativity, and a strong "Make in India" ethos. As a fast-growing brand in the consumer electronics space, Mivi offers exciting career opportunities in engineering, design, marketing, manufacturing, and customer support.</p>
+        <p>Mivi encourages a dynamic and youthful work environment, where ideas are welcomed and individual contributions are recognized.</p>
+        <p><strong>Why work at Mivi?</strong></p>
+        <ul>
+          <li>100% Made in India initiative</li>
+          <li>Startup culture with strong values</li>
+          <li>Learning and development opportunities</li>
+          <li>Inclusive and collaborative team</li>
+          <li>Focus on innovation and quality</li>
+        </ul>
+      </div>
+    </div>
 
-            The founders focused on leveraging technology and innovation to design products that resonated with the ever-evolving needs of Indian consumers. What set Mivi apart from other players in the market was its commitment to keeping audio performance at the forefront of its product offerings, while also ensuring that the products were built to last and aesthetically pleasing.
-        </p>
-        <p>
-            Product Range: A Sound Revolution
-        </p>
-        <p>
-            
-            Mivi’s product range is extensive, offering everything from wireless earphones and Bluetooth speakers to wired headphones and accessories. Let’s take a look at some of the most notable product categories that have solidified Mivi's position in the Indian tech landscape
-        </p>
-        
+    <div id="education-mivi" class="section left">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.N_X1qR_jV1gWDyEyB_00cgHaHa&pid=Api&P=0&h=180" alt="Mivi Founders Education">
+      <div class="about-text">
+        <h2>Education</h2>
+        <p><strong>Viswanadh Kandula</strong> and <strong>Midhula Devabhaktuni</strong>, the co-founders of Mivi, bring a blend of strong educational backgrounds and global experience to the brand.</p>
+        <p><strong>Viswanadh</strong> earned a degree in Electronics Engineering in the U.S., and <strong>Midhula</strong> studied Marketing there as well. Their education plays a key role in Mivi’s design and market strategies.</p>
+      </div>
+    </div>
 
-        <p>
-            1. Wireless Earphones and Neckbands:
-           Mivi has revolutionized the audio experience with its range of stylish and durable wireless earphones. These products combine ergonomic design with immersive sound, perfect for both casual listeners and fitness enthusiasts. Features such as Bluetooth 5.0, water resistance, long battery life, and voice assistant compatibility make them a go-to choice.
-        </p>
-        <p>
-            2. True Wireless Stereo (TWS) Earbuds:
-           Their TWS lineup has gained massive popularity among young, on-the-go users. These earbuds offer touch controls, deep bass, fast charging, and a sleek, compact design—all while being budget-friendly. With options like the DuoPods and AirPods series, Mivi brings premium features to the masses.
+    <div id="family-mivi" class="section right">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.iWRQH3N13dBhedjnPJK-4gHaD4&pid=Api&P=0&h=180" alt="Mivi Team Family">
+      <div class="about-text">
+        <h2>Family</h2>
+        <p>The Mivi "family" includes its employees, technicians, and support staff alongside founders <strong>Viswanadh Kandula</strong> and <strong>Midhula Devabhaktuni</strong>. They foster a family-first mindset that supports innovation and growth . While they maintain privacy around their children’s details, their social media occasionally shares glimpses of cherished family moments—from casual outings to celebrating festivals together. The couple often speaks about prioritizing family time despite their hectic schedules, emphasizing teamwork both at home and work. Their journey reflects a modern Indian family—ambitious, supportive, and rooted in shared values. Whether brainstorming for MIVI or raising their kids, Midhula and Vishal prove that success thrives where love, trust, and mutual respect come first.</p>
+      </div>
+    </div>
 
-        </p>
-        <p>
-            3. Bluetooth Speakers:
-            Mivi’s Bluetooth speakers stand out for their portability, rich sound output, and rugged build. Designed for both indoor parties and outdoor adventures, these speakers boast impressive battery life, splash resistance, and 360-degree sound distribution
-        </p>
-        <p>
-            4. Wired Headphones and Earphones:
-            For users who prefer traditional audio solutions, Mivi offers high-quality wired options with tangle-free cables, built-in mics, and crystal-clear sound. These products are a perfect blend of affordability and performance.
-        </p>
-        <p>
-            5. Audio Accessories:
-           Beyond earphones and speakers, Mivi has introduced a line of accessories such as charging cables, power banks, and car chargers. These are designed to complement their core product range and provide a complete tech ecosystem for their users
-        </p>
-        <p>
-            6. Made in India Excellence:
-A key differentiator is Mivi’s commitment to manufacturing in India. With a dedicated production facility, Mivi ensures stringent quality control, fast delivery, and support for the local economy—all while maintaining international standards.
-        </p>
-        <p>
-            Focus on Innovation
-        </p>
-        <p>
-            
-One of the core strengths of Mivi is its unwavering focus on innovation. The brand constantly strives to integrate the latest technology into its products, ensuring that each product is equipped with cutting-edge features that improve the user experience.
-
-For example, the Mivi Duopods come with touch controls, allowing users to adjust volume, skip tracks, and take calls with a simple touch. Additionally, the Duopods have low-latency mode, making them ideal for gaming and watching videos where audio-video synchronization is crucial.
-
-Similarly, Mivi’s Bluetooth speakers are engineered with advanced drivers and bass radiators to ensure deep, rich sound that delivers an immersive listening experience, regardless of the environment. Whether you’re at a party or in the middle of a quiet room, Mivi’s products adjust to provide balanced, clear audio that meets the user’s expectations.
-        </p>
-        <p>
-            Mivi’s Commitment to Quality
-
-        </p>
-        <p>
-            
-         Mivi is deeply committed to delivering products that meet high standards of quality. Each product undergoes rigorous quality control processes, ensuring durability, reliability, and long-lasting performance. This commitment to quality is evident in the brand’s customer reviews and loyalty, with many users praising Mivi for delivering excellent sound quality and great value for money.
-
-        The brand is also highly responsive to customer feedback, often releasing product updates and improvements based on user suggestions. Mivi’s customer-first approach has garnered a loyal following and continued success in a competitive market
-        </p>
-        <p>
-            Sustainability and Social Responsibility
-        </p>
-        <p>
-            
-        Mivi has also embraced the principles of sustainability, ensuring that its products are eco-friendly and that it actively contributes to social causes. Mivi adheres to strict environmental regulations, focusing on minimizing electronic waste and encouraging the use of recyclable materials in its packaging. Furthermore, Mivi is involved in various initiatives that support education, health, and welfare in the community
-        </p>
-        <p>
-            Conclusion
-        </p>
-        <p>
-            
-         Mivi has successfully established itself as a major player in the audio industry by offering high-quality, innovative products that cater to a wide range of consumer needs. With a focus on affordable pricing, exceptional sound quality, and a commitment to customer satisfaction, Mivi has earned its place among the leading brands in India and continues to expand its reach globally.
-         Whether you are looking for Bluetooth earphones, wired headphones, or a portable Bluetooth speaker, Mivi provides reliable and stylish solutions that enhance the way people experience audio. Through its innovative designs and dedication to customer satisfaction, Mivi is shaping the future of personal audio, one product at a time.
-        </p>
-        
-    </section>
-
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <p>
-            Mivi’s journey is a shining example of what an Indian start-up can achieve with determination, innovation, and a deep understanding of consumer needs. One of the brand’s proudest achievements has been its commitment to the "Make in India" initiative. Setting up a cutting-edge manufacturing unit in Hyderabad, Mivi not only ensured quality control over its products but also created numerous employment opportunities, supporting local communities and empowering Indian talent. This bold move has allowed Mivi to maintain high production standards while contributing meaningfully to the nation’s economic growth.
-
-        Despite being a relatively young brand, Mivi has consistently delivered products that rival international competitors in quality, performance, and design. Their audio accessories, smart devices, and electronics have gained a reputation for offering durability, sleek aesthetics, and advanced features, all at an affordable price point. The brand’s remarkable success in capturing a large market share in India is evident through its regular appearance in best-seller lists on major e-commerce platforms like Amazon and Flipkart. From wireless earphones and speakers to chargers and soundbars, Mivi’s expanding product portfolio meets the diverse needs of its growing consumer base.
-        
-        Another significant achievement is Mivi’s ability to build a strong, youth-centric brand identity. Through clever marketing strategies, influencer collaborations, and social media engagement, the brand has successfully connected with the younger generation of tech-savvy consumers. This has helped Mivi become a household name in India’s competitive electronics market. Recognition from prestigious industry bodies has further validated Mivi’s excellence, with multiple awards for design innovation, customer satisfaction, and business growth.
-        
-        Financially, Mivi’s bootstrapped beginnings have blossomed into a story of impressive revenue growth. Through smart scaling of production, a strong digital presence, and an unwavering commitment to quality, the company has achieved phenomenal financial success. Their robust distribution network ensures that Mivi products are available not just online but also across major retail chains and local electronic stores throughout India.
-        
-        What sets Mivi apart is its customer-centric approach. The brand consistently receives positive reviews for its products, particularly for sound clarity, battery life, affordability, and ergonomic design. Mivi values customer feedback deeply, using it as a tool to continuously refine and enhance its offerings. Their strategic partnerships with influencers and celebrities have further amplified the brand’s visibility and appeal, especially among young consumers.
-        
-        Beyond commercial success, Mivi has also made significant contributions to employment generation and skill development. By training local talent and creating job opportunities, Mivi is playing an active role in strengthening India’s manufacturing ecosystem. Their venture into international markets signals the brand’s ambition to take Indian-made products to global audiences, thereby expanding their footprint beyond national borders.
-        
-        Mivi’s achievements are not limited to business growth alone. The brand is equally committed to sustainable practices, incorporating eco-friendly measures in their manufacturing processes and promoting ethical sourcing. They have shown remarkable agility in responding to market trends, quickly adapting to the growing demand for wireless devices and launching innovative new products in response.
-        
-        Even during the challenging times of the COVID-19 pandemic, Mivi demonstrated resilience. They swiftly adapted to increased online demand, optimized their logistics, and ensured timely deliveries despite widespread disruptions. Behind the scenes, their dedicated research and development teams work tirelessly to improve product quality, battery efficiency, and sound engineering, helping Mivi stay ahead of the competition.
-        
-        Mivi also celebrates its milestones with its community, organizing engaging campaigns, discounts, and giveaways that foster strong emotional connections with customers. Internally, the brand nurtures a positive workplace culture that encourages creativity, collaboration, and inclusivity, ensuring that their team feels valued and motivated to innovate.
-        
-        Ultimately, Mivi’s journey is a powerful inspiration for budding Indian entrepreneurs. Their story proves that with vision, determination, and a passion for excellence, Indian brands can thrive globally. Mivi’s achievements reflect not just commercial success, but also their commitment to empowering India’s workforce, embracing sustainability, and continuously exceeding customer expectations. With every new milestone, Mivi reaffirms its position as a trailblazer in the Indian consumer electronics landscape, poised for even greater heights in the future
-        </p>
-    </section>
-
-    <section id="educational_life">
-        <h2>Educational Life</h2>
-        <p>
-            The story of Mivi’s educational foundation begins with its visionary founders, Viswanadh Kandula and Midhula Devabhaktuni, whose academic journeys played an instrumental role in shaping the innovative spirit of the brand. Both founders are engineers by qualification, and it was their passion for technology and problem-solving that led them to pursue rigorous academic paths. Viswanadh Kandula, with his keen interest in technical and operational management, pursued his education in the United States, where he specialized in Electronics and Communication Engineering. His academic exposure to global technological advancements laid the groundwork for his understanding of complex manufacturing systems, supply chains, and product design. The curriculum not only honed his technical skills but also equipped him with practical insights into quality control and scalable manufacturing — two critical pillars that later became central to Mivi’s operations.
-
-        Midhula Devabhaktuni, on the other hand, brought a complementary set of academic experiences to the partnership. With a deep passion for marketing, business strategy, and customer engagement, Midhula pursued her education in the United States as well, specializing in marketing and business administration. Her academic pursuits gave her a robust understanding of consumer psychology, brand positioning, and global market dynamics. She excelled in courses that emphasized digital marketing, brand storytelling, and market analysis, all of which later played crucial roles in shaping Mivi’s powerful and relatable brand identity. Her educational experiences also exposed her to the nuances of international consumer markets, enabling her to craft strategies that would make Mivi resonate with both Indian and global audiences.
-        
-        During their academic years, both Viswanadh and Midhula actively engaged in projects and internships that enriched their practical understanding of the industry. Viswanadh worked on numerous hands-on projects related to electronics hardware, signal processing, and audio engineering, which became especially valuable when Mivi started designing its audio products. These early experiments helped him appreciate the importance of component quality and sound design, ensuring that Mivi’s devices would deliver premium audio experiences. Meanwhile, Midhula's academic focus on consumer behavior and digital ecosystems gave her the tools to master the art of building a community around the brand. She studied successful global campaigns, analyzed case studies, and developed marketing strategies that were later tailored to suit the Indian market’s unique cultural preferences.
-        
-        Their educational journeys also emphasized the importance of innovation and continuous learning. While textbooks and lectures provided a strong theoretical base, it was their eagerness to learn beyond the classroom that truly set them apart. Both founders regularly attended seminars, workshops, and technology expos, where they stayed updated with emerging trends in consumer electronics. These experiences broadened their perspectives, helping them understand the fast-evolving nature of global technology landscapes and preparing them to navigate future industry shifts effectively. They networked with industry experts, interacted with professors deeply involved in cutting-edge research, and absorbed insights that would eventually help them lead Mivi’s growth with agility and foresight.
-        
-        Viswanadh’s academic emphasis on operational efficiency taught him the value of streamlining manufacturing processes and optimizing resource allocation. His education stressed not only theoretical knowledge but also real-world applications, which proved invaluable when setting up Mivi’s state-of-the-art manufacturing facility in Hyderabad. His understanding of electronics production and assembly allowed Mivi to maintain high standards of quality control, ensuring that every product met international benchmarks. This academic foundation was pivotal in Mivi’s ability to offer premium devices at competitive prices, giving it a distinct advantage in the market.
-        
-        On the other side, Midhula’s academic journey was deeply rooted in consumer-centric strategies. Her coursework on brand management and digital consumer engagement shaped Mivi’s powerful presence on social media platforms and e-commerce sites. She leveraged her academic insights to position Mivi as a youthful, energetic, and relatable brand. Her understanding of data-driven marketing helped Mivi effectively reach its target audience, resulting in impactful campaigns that translated directly into strong sales performance and brand loyalty.
-        
-        The fusion of their academic experiences created a balanced and dynamic leadership duo. Viswanadh’s technical and operational excellence, combined with Midhula’s mastery of marketing and consumer engagement, formed the perfect educational foundation for Mivi’s success. They complemented each other seamlessly, each bringing their area of expertise to the table, enabling Mivi to function as a well-rounded, agile, and innovative organization. Their educational backgrounds also instilled in them a relentless drive for improvement, pushing them to continuously innovate and refine their product offerings.
-        
-        Furthermore, their academic journey did not end with their formal education. Both founders are firm believers in lifelong learning. They continue to invest time in professional development by enrolling in advanced management programs, attending technology forums, and engaging in mentorship networks. Their commitment to learning ensures that Mivi stays ahead of technological trends, adapts swiftly to market demands, and remains a pioneer in India’s consumer electronics sector.
-        
-        In building Mivi, the founders have also fostered an internal culture of learning within the organization. Inspired by their own educational experiences, they encourage team members to upskill regularly, attend training sessions, and participate in knowledge-sharing initiatives. Mivi’s workplace culture thrives on continuous improvement, where employees are motivated to explore new ideas, experiment with innovative technologies, and contribute meaningfully to the company’s growth.
-        
-        As Mivi expanded, the founders ensured that their learnings were shared not just internally but also externally, supporting educational initiatives and workshops for young Indian engineers and marketers. They actively participate in industry panels and educational webinars, inspiring the next generation of entrepreneurs to pursue their dreams with determination and a strong educational foundation. By sharing their journey, they demonstrate the transformative power of education and how it can turn visionary ideas into tangible, successful enterprises.
-        
-        In conclusion, the educational journey behind Mivi is a testament to the power of knowledge, curiosity, and continuous learning. Viswanadh Kandula and Midhula Devabhaktuni’s academic backgrounds laid the groundwork for a brand that is not only technologically superior but also deeply connected to its consumers. Their commitment to learning has infused Mivi with a culture of innovation and excellence, driving its remarkable rise in the consumer electronics market. Their story proves that education is not just about degrees and qualifications but about the relentless pursuit of growth, the courage to explore new possibilities, and the wisdom to apply knowledge in creating meaningful impact. As Mivi continues to evolve, its educational foundation remains one of its strongest assets, guiding the brand towards even greater achievements and inspiring countless others to follow in its footsteps
-        </p>
-    </section>
-
-    <section id="marriage">
+    <div id="marriage-mivi" class="section left">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.Eew5UX2fyYcTY4rV5st4RgAAAA&pid=Api&rs=1&c=1&qlt=95&w=121&h=121" alt="Mivi Founders Marriage Life">
+      <div class="about-text">
         <h2>Marriage</h2>
-        <p>
-            Mivi’s journey is not just about building a brand. It is a story of how many strong partnerships and unions — between people, technology, and ideas — have together shaped the success of this Indian electronics company.
-        It is like a marriage of different powerful elements, coming together in perfect harmony.
-        
-        At its very core, Mivi is the result of two bright, passionate individuals coming together — Viswanadh Kandula and Midhula Devabhaktuni.
-        They are not just co-founders, but true partners in vision.
-        Viswanadh brought his deep technical knowledge to the table, while Midhula contributed her sharp marketing insights.
-        Together, they combined their strengths to dream of building a world-class brand, entirely from India.
-        
-        Their goal was bold: to create an Indian electronics brand that could stand proudly on the global stage, and compete with international giants.
-        They saw a gap in the market — a demand for high-quality, stylish, yet affordable audio devices and smart accessories.
-        Instead of importing products from other countries, they wanted to design, engineer, and manufacture products in India itself, making "Made in India" a proud statement.
-        
-        This dream became the heart of Mivi.
-        
-        But dreams alone are not enough — execution matters.
-        Mivi’s growth story is a testament to how they married vision with action, and ambition with hard work.
-        
-        Their first important "marriage" was with innovation.
-        Mivi did not just want to make ordinary products. They wanted to make technology-packed, stylish, high-performance products that would catch the attention of young India.
-        They focused on sleek designs, long battery life, superb audio quality, and affordability — all at once.
-        This blend of creativity and technical brilliance gave Mivi a strong place in the market.
-        
-        But even innovation needs partners.
-        Mivi formed crucial alliances with audio specialists, product designers, and engineers.
-        These collaborations helped them continuously improve their products, keeping them on par with global brands.
-        Their earphones, soundbars, wireless speakers, and chargers were not just good-looking — they delivered serious performance.
-        
-        Beyond product creation, Mivi understood the importance of logistics and supply chains.
-        They built reliable partnerships with trusted suppliers, ensuring they had high-quality components for every device they produced.
-        They also developed strong relationships with logistics partners, making sure that every Mivi product could reach customers on time, anywhere in India.
-        
-        One of the most beautiful "marriages" in Mivi’s journey is their deep connection with their customers.
-        Mivi listens carefully to customer feedback.
-        They adapt their designs based on what users actually want.
-        They have a strong presence on social media and respond actively to customer queries, building a loyal community of fans.
-        
-        Another major turning point was Mivi’s decision to establish local manufacturing in Hyderabad.
-        Instead of importing from other countries, Mivi invested in "Make in India" by setting up their own manufacturing unit.
-        This step ensured greater control over product quality and helped reduce costs.
-        It also created new jobs and supported the local economy, further strengthening Mivi’s bond with the country.
-        
-        Mivi also partnered with major e-commerce platforms like Amazon and Flipkart, making their products easily available to millions of Indians.
-        These platforms gave Mivi wide visibility and helped them rapidly scale their sales across the nation.
-        
-        Recognising the power of modern marketing, Mivi collaborated with influencers, digital creators, and celebrities.
-        These partnerships helped Mivi build brand trust, especially among young customers who look for trendy, reliable tech gadgets.
-        
-        Beyond business growth, Mivi has also embraced responsibility and sustainability.
-        They have adopted eco-friendly practices in their production processes.
-        They ensure ethical sourcing of materials, and strive to reduce their environmental footprint.
-        This shows their commitment not only to profits but also to the planet.
-        
-        Within the company, Mivi encourages a healthy "marriage of ideas."
-        Their teams work together, combining creative concepts with practical solutions.
-        Everyone is encouraged to share ideas, and this inclusive culture fosters innovation at every level.
-        
-        Mivi also works closely with research labs and technology consultants to stay ahead of the curve.
-        They study global trends, explore new technologies, and ensure that every new product they launch is better than the last.
-        
-        Their relationship with customer feedback has been especially valuable.
-        By actively listening to users, Mivi has improved product features like battery life, audio clarity, and durability.
-        This ongoing feedback loop is a strong pillar of their success.
-        
-        Through every challenge — whether it was fierce competition, market changes, or production hurdles — Mivi’s strong network of partnerships acted like a support system.
-        These collaborations gave them the resilience to overcome obstacles and keep moving forward.
-        
-        Today, Mivi stands as a proud example of what is possible when ambition, creativity, and collaboration come together.
-        Their "marriage" of technology, design, customer focus, and sustainability is not just a part of their story — it is the very essence of their journey.
-        
-        As they continue to grow, Mivi remains committed to nurturing these partnerships.
-        They know that their future success depends on the strength of these relationships.
-        
-        The Mivi story is a beautiful reminder that when passion meets purpose, and when the right people and ideas come together, success becomes not just a possibility, but a reality
-        </p>
-    </section>
+        <p><strong>Midhula</strong> and <strong>Viswanadh</strong> Midhula Devabhaktuni and Vishal Kandula, the dynamic husband-wife duo behind MIVI, exemplify how personal and professional partnerships can thrive together. This power couple has seamlessly blended their marriage with entrepreneurship, combining Vishal's technical expertise with Midhula's creative vision to build one of India's most promising homegrown audio brands. Their journey showcases the strength of their bond - from brainstorming product designs at the dinner table to balancing parenting responsibilities while scaling their business. Unlike many founder couples who keep their personal lives private, Midhula and Vishal occasionally offer glimpses into their harmonious world, revealing how they maintain strong family values amidst their growing enterprise. Their story serves as an inspiration to aspiring entrepreneur couples, proving that with mutual respect, shared passion, and excellent teamwork, it's possible to nurture both a successful marriage and a thriving business simultaneously. The MIVI founders truly embody the modern ideal of #CoupleGoals, showing the world that love and professional ambition can beautifully coexist when you're building your dreams together.</p>
+      </div>
+    </div>
+
+    <div id="achievements-mivi" class="section right">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.k0LLve_9TfAyWw1Oc_UGiAHaEK&pid=Api&P=0&h=180" alt="Mivi Achievements">
+      <div class="about-text">
+        <h2>Achievements</h2>
+        <p><strong>Mivi</strong> has achieved several milestones:</p>
+        <ul>
+          <li><strong>100% Made in India</strong> – Own manufacturing unit in Hyderabad</li>
+          <li><strong>10M+ Customers</strong> served</li>
+          <li><strong>Recognized Startup</strong> featured by Forbes, YourStory</li>
+          <li><strong>Women in Leadership</strong> with Midhula as a co-founder</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="quotes-mivi" class="section left">
+      <img src="https://tse3.mm.bing.net/th?id=OIF.JB6SA66m6TITLljWYLgQuw&pid=Api&P=0&h=180" alt="Mivi Founders Quotes">
+      <div class="about-text">
+        <h2>Quotes from the Founders</h2>
+        <blockquote>“We wanted to build a brand that Indians could be proud of — not just another import, but something born and built here.”<br><strong>— Midhula Devabhaktuni</strong></blockquote>
+        <blockquote>“For us, manufacturing is not just about business — it’s about creating jobs, building skills, and empowering the country.”<br><strong>— Viswanadh Kandula</strong></blockquote>
+        <blockquote>“The best way to serve the Indian market is to understand it from the ground up — and that’s exactly what we do every day at Mivi.”<br><strong>— Midhula Devabhaktuni</strong></blockquote>
+        <blockquote>“We dream big, but we build local — that’s the Mivi way.”<br><strong>— Viswanadh Kandula</strong></blockquote>
+      </div>
+    </div>
+
+    <div id="gallery-mivi" class="section left">
+        <div class="about-text">
+          <h2>Gallery</h2>
+          <p><a href="gallery.html#gallery" style="color: blue;">Click here to view gallery of Mivi</a></p>
+        </div>
+      </div>
 </body>
-<script>
-    function handleLogin(event) {
-      event.preventDefault();
-      // You can add actual credential check here if needed
-      alert("Login successful!");
-      window.location.href = "gallery.html"; // redirect to blog
-    }
-  </script>
 </html>
 
 
