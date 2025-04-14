@@ -13,14 +13,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('https://images.fonearena.com/blog/wp-content/uploads/2023/04/Mivi-DuoPods-K7-2-1024x576.jpg'); 
-
+            background-image: url('https://images.fonearena.com/blog/wp-content/uploads/2023/04/Mivi-DuoPods-K7-2-1024x576.jpg'); /* Replace with your background image URL */
             background-size: cover;
             background-position: center;
         }
 
         .login-container {
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            background-color: rgba(228, 230, 221, 0.467); /* Semi-transparent white background */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -43,7 +42,7 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid rgba(228, 230, 221, 0.467);
             border-radius: 5px;
         }
 
@@ -61,38 +60,54 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .remember-me input {
+            width: auto;
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            display: block;
+        }
     </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <form onsubmit="handleLogin(event)">
+            <label for="email">Enter your email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Enter your password</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember" style="display: inline; text-align: left;">Remember me</label>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <a href="register.html" class="register-link">Don't have an account? Register</a>
+        </form>
+    </div>
+
     <script>
         function handleLogin(event) {
             event.preventDefault();
             alert("Login submitted successfully!");
-            // You can add further validation or redirect logic here
+            window.location.href = "blog.html"; // redirect to blog
         }
     </script>
-</head>
-<body>
-    <div class="login-container">
-        <h2>Login - Mivi Blog</h2>
-        <form onsubmit="handleLogin(event)">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
-
-            <button type="submit">Login</button>
-        </form>
-    </div>
 </body>
-
-<script>
-    function handleLogin(event) {
-      event.preventDefault();
-      // You can add actual credential check here if needed
-      alert("Login successful!");
-      window.location.href = "blog.html"; // redirect to blog
-    }
-  </script>
 </html>
 
 
